@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+path {
+    fill: transparent;
+}
+.build-complex {
+    position: relative;
+}
+
+.build-item:hover path {
+    fill: #00ff515c;
+}
+
+.build-item:hover {
+    cursor: pointer;
+}
+
+.build-hide:hover {
+   cursor: url(../img/sold-out.png) 33 33, auto;
+} 
+
+
+.build-hide:hover path {
+    fill: #ff1a055c;
+}
+
+.build-item:hover .status-open path {
+    fill: #00ff51cc;
+}
+
+.build-hide:hover .status-close path {
+    fill: #ff1a05b8;
+}
+
+.build-path {
+    stroke-width: 4px
+}
+.number-circle {
+    cursor: pointer;
+    stroke: black;
+    stroke-width: 2px;
+    fill: rgb(230, 255, 5);
+}
+.number-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0;
+    fill: #000000;
+    position: relative;
+    cursor: pointer;
+}
+.build-info {
+    position: absolute;
+    max-width: 400px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 10px black;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 20px;
+    right: 40px;
+    bottom: 40px;
+}
+.info-text {
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+.info-text:not(:last-child) {
+    margin-bottom: 15px;
+}
+.info-text > div {
+    margin-left: 25px;
+}
+
+
+.build-item:hover > .status-open {
+    stroke: rgba(0, 0, 0, 0.8);
+}
+.build-item:hover > .status-close {
+    stroke: rgba(0, 0, 0, 0.8);
+}
+
+.status-open,
+.status-close {
+    stroke: transparent;
+}
+
+
+@media screen and (max-width:1200px) {
+    .build-info {
+        max-width: 200px;
+        padding: 5px 10px;
+    }
+    .info-text {
+        font-size: 14px;
+        padding: 5px;
+    }
+    .info-text:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .info-text > div {
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width:850px) {
+    .build-info {
+        max-width: 150px;
+        padding: 5px 10px;
+        right: 20px;
+        bottom: 20px;
+    }
+    .info-text {
+        font-size: 10px;
+        padding: 5px;
+    }
+    .info-text:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .info-text > div {
+        margin-left: 5px;
+    }
+}
+@media screen and (max-width:600px) {
+    .build-info {
+        max-width: 150px;
+        padding: 5px 5px;
+        right: 5px;
+        bottom: 10px;
+    }
+    .info-text {
+        font-size: 8px;
+        padding: 5px;
+    }
+    .info-text:not(:last-child) {
+        margin-bottom: 5px;
+    }
+    .info-text > div {
+        margin-left: 5px;
+    }
+}

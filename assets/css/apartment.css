@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    max-width: 1440px;
+    width: 100%;
+    padding: 0 20px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+
